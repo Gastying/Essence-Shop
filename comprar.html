@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Compra - Essence Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="listado_tabla.html">Listado en Tabla</a></li>
+                <li><a href="listado_box.html">Listado en Boxes</a></li>
+                <li><a href="comprar.html">Formulario de Compra</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Formulario de Compra</h2>
+    <form action="procesar_compra.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="medio_pago">Medio de Pago:</label>
+        <select id="medio_pago" name="medio_pago" required>
+            <option value="tarjeta">Tarjeta</option>
+            <option value="efectivo">Efectivo</option>
+        </select>
+
+        <label for="productos">Productos:</label>
+        <textarea id="productos" name="productos" rows="4" required></textarea>
+
+        <button type="submit" class="btn">Realizar Compra</button>
+    </form>
+
+    <footer>
+        <p>&copy; 2025 Essence Shop. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
